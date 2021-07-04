@@ -26,7 +26,7 @@ var file = argv.f,
   out = argv.o,
   cssReg = /\.css$/;
 if (file) {
-  resolveFile(path.join(process.cwd(), file));
+  resolveFile(path.join(process.cwd(), file), out);
   return;
 }
 if (dir) {
